@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurants & Cuisines</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/styles.css">
+  </head>
+  <body>
+    <nav>
+      @Html.ActionLink("Home", "Index", "Home")
+      @* @Html.ActionLink("Tasks", "Index", "Items") *@
+      @* @Html.ActionLink("Categories", "Index", "Categories") *@
+    </nav>
+    <main class="container-fluid">
+      @RenderBody()
+    </main>
+  </body>
+</html>

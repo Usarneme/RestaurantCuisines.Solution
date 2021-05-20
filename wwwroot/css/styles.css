@@ -1,0 +1,14 @@
+body, main {
+  min-height: 95vh;
+  background: lightcyan;
+}
+
+nav {
+  min-height: 42px;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
