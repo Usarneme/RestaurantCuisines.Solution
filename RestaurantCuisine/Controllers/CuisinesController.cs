@@ -25,5 +25,13 @@ namespace RestaurantCuisine.Controllers
     {
       return View();
     }
+
+    [HttpPost("/cuisines/create")]
+    public ActionResult Create(Cuisine cuisine)
+    {
+      _db.Cuisines.Add(cuisine);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
