@@ -1,0 +1,15 @@
+@using RestaurantCuisine.Models;
+
+@{
+  Layout = "_Layout";
+}
+
+<div class="container-fluid">
+  <h3>Here are all the restaurants corresponding with selected cuisine:</h3>
+
+  <ol>
+  @foreach (Restaurant restaurant in @Model["restaurant"])
+  {
+    <li><a href='/cuisines/@Model["cuisines"].Id/restaurants/@restaurant.RestaurantId'>@restaurant.Description</a></li>
+  }
+</div>

@@ -33,5 +33,12 @@ namespace RestaurantCuisine.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    [HttpGet("/cuisines/{CuisineId}/details")]
+    public ActionResult Details(int CuisineId)
+    {
+      // TODO
+      return View();
+    }
   }
 }
